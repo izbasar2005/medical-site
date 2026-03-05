@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janymda – Дәрігерге онлайн жазылу</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Janymda</div>
+      <nav class="nav-links">
+        <a href="#doctors">Дәрігерлер</a>
+        <a href="#appointment">Жазылу</a>
+        <a href="#login" class="nav-text-link">Кіру</a>
+        <a href="#register" class="nav-btn">Тіркелу</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Мәзірді ашу">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Дәрігерге онлайн жазылу</h1>
+          <p class="hero-subtitle">
+            Қазақстандағы үздік дәрігерлерге бірнеше минутта онлайн жазылыңыз.
+            Кезекті қысқарытып, денсаулығыңызды қазір ойлаңыз.
+          </p>
+          <ul class="hero-benefits">
+            <li>✓ 1000+ тексерілген дәрігер</li>
+            <li>✓ Онлайн жазылу және еске салғыштар</li>
+            <li>✓ Қалаңыздағы клиникалар мен телемедицина</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h2>Дәрігерді тез табыңыз</h2>
+          <form class="search-form" id="search-form">
+            <div class="form-group">
+              <label for="city">Қала</label>
+              <select id="city" name="city">
+                <option value="">Қаланы таңдаңыз</option>
+                <option value="almaty">Алматы</option>
+                <option value="astana">Астана</option>
+                <option value="shymkent">Шымкент</option>
+                <option value="aktau">Ақтау</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="specialty">Мамандығы</label>
+              <select id="specialty" name="specialty">
+                <option value="">Мамандықты таңдаңыз</option>
+                <option value="therapist">Терапевт</option>
+                <option value="pediatrician">Педиатр</option>
+                <option value="cardiologist">Кардиолог</option>
+                <option value="gynecologist">Гинеколог</option>
+                <option value="dentist">Тіс дәрігері</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="doctor-name">Дәрігердің аты</label>
+              <input type="text" id="doctor-name" name="doctor-name" placeholder="Мысалы: Айдос Қалиев">
+            </div>
+            <button type="submit" class="primary-btn full-width">Дәрігерді табу</button>
+          </form>
+          <p class="search-hint">Өзіңізге ыңғайлы уақытты таңдаңыз, жүйе сізге еске салады.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties -->
+    <section class="section" id="specialties">
+      <div class="container">
+        <div class="section-header">
+          <h2>Көп сұралатын мамандықтар</h2>
+          <p>Сізге және отбасыңызға қажет дәрігерді тез тауып алыңыз.</p>
+        </div>
+        <div class="cards-grid specialties-grid">
+          <article class="card specialty-card">
+            <div class="icon icon-blue">🩺</div>
+            <h3>Терапевт</h3>
+            <p>Жалпы тексеріс, созылмалы аурулар, алдын алу кеңестері.</p>
+            <span class="pill">120+ дәрігер</span>
+          </article>
+          <article class="card specialty-card">
+            <div class="icon icon-green">👶</div>
+            <h3>Педиатр</h3>
+            <p>Балаларға арналған кешенді тексеріс және бақылау.</p>
+            <span class="pill">80+ дәрігер</span>
+          </article>
+          <article class="card specialty-card">
+            <div class="icon icon-purple">❤️</div>
+            <h3>Кардиолог</h3>
+            <p>Жүрек-қан тамыр жүйесін диагностикалау және емдеу.</p>
+            <span class="pill">60+ дәрігер</span>
+          </article>
+          <article class="card specialty-card">
+            <div class="icon icon-orange">🦷</div>
+            <h3>Тіс дәрігері</h3>
+            <p>Эстетикалық және терапиялық стоматология, имплантация.</p>
+            <span class="pill">90+ дәрігер</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured doctors -->
+    <section class="section section-alt" id="doctors">
+      <div class="container">
+        <div class="section-header">
+          <h2>Ұсынылған дәрігерлер</h2>
+          <p>Пациенттердің пікірлері мен рейтингтері бойынша іріктелген.</p>
+        </div>
+        <div class="cards-grid doctors-grid">
+          <article class="card doctor-card">
+            <div class="doctor-main">
+              <div class="avatar avatar-blue">AK</div>
+              <div>
+                <h3>Айдос Қалиев</h3>
+                <p class="doctor-specialty">Кардиолог · Алматы</p>
+                <p class="doctor-meta">15 жыл тәжірибе · ★ 4.9</p>
+              </div>
+            </div>
+            <p class="doctor-desc">
+              Жүрек-қан тамыр ауруларын ерте диагностикалау және өмір салтын түзету бойынша маман.
+            </p>
+            <button class="secondary-btn doctor-book-btn" data-doctor="Айдос Қалиев">Жазылу</button>
+          </article>
+
+          <article class="card doctor-card">
+            <div class="doctor-main">
+              <div class="avatar avatar-green">NS</div>
+              <div>
+                <h3>Нұрсәуле Сабирова</h3>
+                <p class="doctor-specialty">Педиатр · Астана</p>
+                <p class="doctor-meta">10 жыл тәжірибе · ★ 4.8</p>
+              </div>
+            </div>
+            <p class="doctor-desc">
+              Жаңа туған және мектеп жасындағы балаларды кешенді бақылау, вакцинацияны жоспарлау.
+            </p>
+            <button class="secondary-btn doctor-book-btn" data-doctor="Нұрсәуле Сабирова">Жазылу</button>
+          </article>
+
+          <article class="card doctor-card">
+            <div class="doctor-main">
+              <div class="avatar avatar-purple">MA</div>
+              <div>
+                <h3>Медет Асқаров</h3>
+                <p class="doctor-specialty">Терапевт · Шымкент</p>
+                <p class="doctor-meta">12 жыл тәжірибе · ★ 4.7</p>
+              </div>
+            </div>
+            <p class="doctor-desc">
+              Созылмалы аурулармен өмір сүру сапасын арттыруға бағытталған жеке жоспар құрастырады.
+            </p>
+            <button class="secondary-btn doctor-book-btn" data-doctor="Медет Асқаров">Жазылу</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment form -->
+    <section class="section" id="appointment">
+      <div class="container appointment-grid">
+        <div>
+          <h2>Онлайн жазылу формасы</h2>
+          <p class="section-subtitle">
+            Қысқа форманы толтырып, сізге ыңғайлы уақытқа жазылыңыз. Біз сізбен растау үшін хабарласамыз.
+          </p>
+          <ul class="list-check">
+            <li>Деректер қауіпсіз шифрланады</li>
+            <li>SMS және E-mail еске салғыштар</li>
+            <li>Тегін онлайн жазылу</li>
+          </ul>
+        </div>
+        <form class="card appointment-form" id="appointment-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Аты-жөніңіз</label>
+              <input type="text" id="full-name" name="full-name" placeholder="Аты-жөніңіз" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон нөмірі</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 ___ ___ __ __" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="app-city">Қала</label>
+              <select id="app-city" name="app-city" required>
+                <option value="">Таңдаңыз</option>
+                <option value="almaty">Алматы</option>
+                <option value="astana">Астана</option>
+                <option value="shymkent">Шымкент</option>
+                <option value="other">Басқа</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="app-specialty">Мамандығы</label>
+              <select id="app-specialty" name="app-specialty" required>
+                <option value="">Таңдаңыз</option>
+                <option value="therapist">Терапевт</option>
+                <option value="pediatrician">Педиатр</option>
+                <option value="cardiologist">Кардиолог</option>
+                <option value="gynecologist">Гинеколог</option>
+                <option value="dentist">Тіс дәрігері</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Күні</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Уақыты</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="preferred-doctor">Дәрігер (міндетті емес)</label>
+            <input type="text" id="preferred-doctor" name="preferred-doctor" placeholder="Қалаулы дәрігердің аты">
+          </div>
+          <div class="form-group">
+            <label for="comment">Қысқаша шағымыңыз</label>
+            <textarea id="comment" name="comment" rows="3" placeholder="Қысқаша жазыңыз"></textarea>
+          </div>
+          <button type="submit" class="primary-btn full-width">Жазылуды растау</button>
+          <p class="form-note">Түймені басу арқылы жеке деректеріңізді өңдеуге келісесіз.</p>
+          <p class="form-success" id="appointment-success" hidden>Өтінішіңіз қабылданды! Жақын арада сізбен байланысамыз.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Пайдаланушылардың пікірлері</h2>
+          <p>Janymda арқылы дәрігерге жазылған адамдар не дейді?</p>
+        </div>
+        <div class="testimonials-wrapper">
+          <button class="carousel-btn prev" aria-label="Алдыңғы пікір">‹</button>
+          <div class="testimonials-track" id="testimonials-track">
+            <article class="card testimonial-card">
+              <p class="testimonial-text">
+                «Алматыда жақсы кардиолог табу қиын еді. Janymda арқылы бірнеше минутта жазылып,
+                барлық нәтижелерді онлайн алдым.»
+              </p>
+              <p class="testimonial-author">Айгерім, 32 жаста</p>
+              <p class="testimonial-meta">Кардиологқа жазылу · Алматы</p>
+            </article>
+            <article class="card testimonial-card">
+              <p class="testimonial-text">
+                «Балама педиатр керек болды. Пікірлерді қарап, ыңғайлы уақытты өзім таңдадым.
+                Еске салғыштар өте ыңғайлы.»
+              </p>
+              <p class="testimonial-author">Ерлан, 29 жаста</p>
+              <p class="testimonial-meta">Педиатрға жазылу · Астана</p>
+            </article>
+            <article class="card testimonial-card">
+              <p class="testimonial-text">
+                «Клиникаға қоңырау шалмай-ақ, онлайн жазылған өте ыңғайлы. Барлық деректер бір жерде сақталады.»
+              </p>
+              <p class="testimonial-author">Жанар, 40 жаста</p>
+              <p class="testimonial-meta">Терапевтке жазылу · Шымкент</p>
+            </article>
+          </div>
+          <button class="carousel-btn next" aria-label="Келесі пікір">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Жиі қойылатын сұрақтар</h2>
+          <p>Сұрағыңызға тез жауап табыңыз.</p>
+        </div>
+        <div class="faq-list" id="faq-list">
+          <article class="faq-item">
+            <button class="faq-question">
+              Онлайн жазылу қалай жұмыс істейді?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Қала, мамандық және дәрігерді таңдап, байланыс деректеріңізді қалдырасыз.
+                Клиника менеджері уақытты растау үшін сізге хабарласады.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Қызмет ақылы ма?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Janymda арқылы онлайн жазылу сіз үшін тегін. Сіз тек клиникадағы қабылдау үшін төлейсіз.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Деректерім қаншалықты қауіпсіз?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Барлық жеке деректер шифрланады және қауіпсіз серверлерде сақталады.
+                Біз оларды үшінші тұлғаларға бермейміз.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Кездесуді қалай болдырмауға болады?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Растаушы SMS немесе E-mail ішіндегі сілтеме арқылы қабылдауды болдырмауға немесе уақытын ауыстыруға болады.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="login">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-logo">Janymda</h3>
+        <p class="footer-text">
+          Дәрігерге онлайн жазылудың қауіпсіз және ыңғайлы сервисі. Сіздің денсаулығыңыз – біздің басты құндылығымыз.
+        </p>
+      </div>
+      <div>
+        <h4>Платформа</h4>
+        <ul class="footer-links">
+          <li><a href="#specialties">Мамандықтар</a></li>
+          <li><a href="#doctors">Дәрігерлер</a></li>
+          <li><a href="#appointment">Жазылу</a></li>
+        </ul>
+      </div>
+      <div id="register">
+        <h4>Дәрігерлерге</h4>
+        <ul class="footer-links">
+          <li><a href="#">Тіркелу</a></li>
+          <li><a href="#">Сұрақ қою</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Байланыс</h4>
+        <ul class="footer-links">
+          <li>support@janymda.kz</li>
+          <li>+7 (700) 000‑00‑00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Janymda. Барлық құқықтар қорғалған.</p>
+      <p class="footer-bottom-links">
+        <a href="#">Құпиялылық саясаты</a>
+        <span>·</span>
+        <a href="#">Қолдану шарттары</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
